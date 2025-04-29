@@ -10,11 +10,11 @@ public class Ucebnice extends Publikace {
 
     @Override
     public void vypisInfo(){
-        System.out.println("Nazev: " + nazev);
-        System.out.println("Autor: " + autor);
-        System.out.println("Rok Vydani: " + rokVydani);
-        System.out.println("ISBN: " + isbn);
-        System.out.println("Pocet Stranek: " + pocetStranek);
+        System.out.println("Nazev: " + getNazev());
+        System.out.println("Autor: " + getAutor());
+        System.out.println("Rok Vydani: " + getRokVydani());
+        System.out.println("ISBN: " + getIsbn());
+        System.out.println("Pocet Stranek: " + getPocetStranek());
         System.out.println("Predmet: " + predmet);
     }
 

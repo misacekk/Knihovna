@@ -3,11 +3,11 @@ package knihovna;
 import java.util.Scanner;
 
 public class Publikace {
-    public String nazev;
-    public String autor;
-    public int rokVydani;
-    public String isbn;
-    public int pocetStranek;
+    private String nazev;
+    private String autor;
+    private int rokVydani;
+    private String isbn;
+    private int pocetStranek;
 
 Scanner sc = new Scanner(System.in);
 

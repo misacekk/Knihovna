@@ -34,5 +34,7 @@ public class Main {
         }
         System.out.println("Celkovy pocet stranek"+str);
 
+
+
     }
 }
