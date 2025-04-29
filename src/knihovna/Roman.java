@@ -3,9 +3,14 @@ package knihovna;
 public class Roman extends Publikace {
     public String zanr;
 
-    public Roman(String nazev, String autor, int rokVydani, String isbn, int pocetStranek, String zanr) {
-        super(nazev, autor, rokVydani, isbn, pocetStranek);
-        this.zanr = zanr;
+    public Roman() {
+        super();
+        System.out.println("Zadej zanr");
+        this.zanr = sc.nextLine();
+    }
+
+    public String getZanr() {
+        return zanr;
     }
 
     @Override

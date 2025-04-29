@@ -2,9 +2,10 @@ package knihovna;
 
 public class Ucebnice extends Publikace {
     public String predmet;
-    public Ucebnice(String nazev, String autor, int rokVydani, String isbn, int pocetStranek, String predmet) {
-        super(nazev, autor, rokVydani, isbn, pocetStranek);
-        this.predmet = predmet;
+    public Ucebnice() {
+        super();
+        System.out.println("Zadej predmet");
+        this.predmet = sc.nextLine();
     }
 
     @Override
@@ -17,5 +18,8 @@ public class Ucebnice extends Publikace {
         System.out.println("Predmet: " + predmet);
     }
 
+    public String getPredmet() {
+        return predmet;
+    }
 }
 

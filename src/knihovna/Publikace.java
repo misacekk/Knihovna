@@ -1,5 +1,7 @@
 package knihovna;
 
+import java.util.Scanner;
+
 public class Publikace {
     public String nazev;
     public String autor;
@@ -7,14 +9,21 @@ public class Publikace {
     public String isbn;
     public int pocetStranek;
 
+Scanner sc = new Scanner(System.in);
 
-
-    public Publikace(String nazev, String autor, int rokVydani, String isbn, int pocetStranek) {
-        this.nazev = nazev;
-        this.autor = autor;
-        this.rokVydani = rokVydani;
-        this.isbn = isbn;
-        this.pocetStranek = 0;
+    public Publikace() {
+        System.out.println("Zadej nazev");
+        this.nazev = sc.nextLine();
+        System.out.println("Zadej autora");
+        this.autor = sc.nextLine();
+        System.out.println("Zadej rok vydani");
+        this.rokVydani =  sc.nextInt();
+        sc.nextLine();
+        System.out.println("Zadej isbn");
+        this.isbn = sc.nextLine();
+        System.out.println("Zadej pocet stranek");
+        this.pocetStranek =  sc.nextInt();
+        sc.nextLine();
     }
 
     public void vypisInfo(){
